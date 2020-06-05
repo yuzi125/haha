@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>郭經華407850212,407416097 p3</title>
+    <link rel="stylesheet" href="./css/page3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id ="heading">
+        <h1>郭經華</h1>
+      </div>
+      <div id ="main">
+        <div id="left">
+          <h2>教學概況</h2>
+          <h3 onclick="HAHA">輸入想查詢之編號</h3>
+          <p><input type ="text" id = "HAHA"></p>
+          <button type="button" id="countHAHA" value="計算">確定</button>
+          <p>1.課表</p>
+          <p>2.曾任課程</p>
+          <p>3.教學計畫</p>
+          <p>4.駐校時間</p>
+
+          <ul>
+                <li onlick ><a href="./page2.html">上一頁</a></li>
+                <li onlick ><a href="./page4.html">下一頁</a></li>
+            </ul>
+        </div>
+
+        <div id="right" style="text-align: center">
+                <img src ="img/p3(1).PNG"width="600"length="600">    
+        </div>
+      </section>
+    </div>
+      <footer>
+        <p><small>407850212,407416097</small></p>
+        <ul>
+          <a
+            href="http://www.engineering.tku.edu.tw/info/280"
+            width="200"
+            length="200"
+            >點我進淡江工學院</a
+          >
+        </ul>
+
+      </footer>
+   
+ <script>
+ document.getElementById('countHAHA').onclick = function(){
+  var HAHA = parseInt(document.getElementById('HAHA').value);
+    const p = document.getElementById('right');
+        console.log(p);
+        switch (HAHA) {
+          case 1:
+            p.innerHTML = '<img src="./img/p3(1).PNG" width="600"length="600" /></div>';
+            break;
+          case 2:
+            p.innerHTML = '<img src="./img/p3(2).PNG" width="600"length="600" /></div>';
+            break;
+          case 3:
+            p.innerHTML = '<img src="./img/p3(3).PNG" width="580"length="580" /></div>';
+            break;
+        case 4:
+            p.innerHTML = '<img src="./img/p3(4).PNG" width="600"length="600" /></div>';
+            break;
+        }
+ }
+
+
+ </script>
+
+  </body>
+</html>

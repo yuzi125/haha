@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id ="container" style="background-color: aquamarine;">
+
+<h2>按下按鈕跳出視窗</h2>
+<button onclick="myFunction()">click it</button>
+<ul style="list-style: none">
+  <li onlick ><a href="./page3.html">上一頁</a></li>
+</ul>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+</div>
+<script>
+function myFunction() {
+  var txt,txt1,txt2;
+  if (confirm("Press a button!")) {
+    txt = "中文姓名:    郭經華";
+    txt1 = "英文姓名:    KUO, CHIN-HWA";
+    txt2 = "校內Email:  chkuo@mail.tku.edu.tw";
+   
+  } else {
+    txt = "You pressed Cancel!";
+    
+  }
+   document.getElementById("demo").innerHTML=txt;
+   document.getElementById("demo1").innerHTML=txt1;
+   document.getElementById("demo2").innerHTML=txt2;
+}
+</script>
+
+</body>
+</html>
